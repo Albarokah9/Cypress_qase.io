@@ -23,3 +23,9 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+import './commands';
+// Perintah kustom untuk pengetikan lambat untuk mensimulasikan input manusia
+Cypress.Commands.add('slowType', (selector, text, options = {}) => {
+    const defaultOptions = { delay: 100 }; // Delay pengetikan default
+    return cy.get(selector).type(text, { ...defaultOptions, ...options });
+});
