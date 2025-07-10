@@ -1,0 +1,43 @@
+{
+  "validUser": {
+    "email": "test@gmail.com",
+    "password": "Cobatest"
+  },
+  "invalidPassword": {
+    "email": "test@gmail.com",
+    "password": "passwordsalah"
+  },
+  "invalidEmail": {
+    "email": "projecttestcasesoapleasure222@gmail.com",
+    "password": "projecttestcase"
+  },
+  "invalidEmailAndPassword": {
+    "email": "projecttestcasesoapleasurewrong@gmail.com",
+    "password": "passwordsalah"
+  },
+  "incorrectEmailFormat": {
+    "email": "usernamedomain.com",
+    "password": "Cobatest"
+  },
+  "emptyEmail": {
+    "email": "",
+    "password": "Cobatest"
+  },
+  "emptyPassword": {
+    "email": "test@gmail.com",
+    "password": ""
+  },
+  "emptyFields": {
+    "email": "",
+    "password": ""
+  },
+  "unverifiedAccount": {
+    "email": "test@gmail.com",
+    "password": "Cobatest"
+  },
+  "errorMessages": {
+    "invalidCredentials": "Invalid email address or password",
+    "requiredEmail": "Email address is required",
+    "requiredPassword": "Please enter your password"
+  }
+}
