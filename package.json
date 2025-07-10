@@ -1,9 +1,12 @@
 {
-  "name": "Cypress_qase.io",
+  "name": "cypress-qase.io",
   "version": "1.0.0",
   "description": "Cypress integration with Qase.io",
   "main": "index.js",
   "repository": "https://github.com/Albarokah9/Cypress_qase.io.git",
   "author": "Albarokah Rifansah",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^14.5.1"
+  }
 }
