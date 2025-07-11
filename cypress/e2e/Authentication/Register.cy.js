@@ -31,31 +31,31 @@ describe('Register Test Suite', () => {
         })
     );
 
-    // qase(
-    //     2,
-    //     it('TC_REG_02 - Register  dengan menggunakan kombinasi password huruf & angka', function () {
-    //         const {
-    //             firstName,
-    //             lastName,
-    //             email,
-    //             phone,
-    //             password,
-    //             confirmPassword,
-    //         } = this.userData.userWithAlphanumericPassword;
+    qase(
+        13,
+        it('TC_REG_02 - Register  dengan menggunakan kombinasi password huruf & angka', function () {
+            const {
+                firstName,
+                lastName,
+                email,
+                phone,
+                password,
+                confirmPassword,
+            } = this.userData.userWithAlphanumericPassword;
 
-    //         RegisterPage.typeFirstName(firstName)
-    //             .typeLastName(lastName)
-    //             .typeEmail(email)
-    //             .typePhone(phone)
-    //             .typePassword(password)
-    //             .typeConfirmPassword(confirmPassword)
-    //             .clickRegisterButton()
-    //             .assertRegistrationSuccessMessage(email);
-    //     })
-    // );
+            RegisterPage.typeFirstName(firstName)
+                .typeLastName(lastName)
+                .typeEmail(email)
+                .typePhone(phone)
+                .typePassword(password)
+                .typeConfirmPassword(confirmPassword)
+                .clickRegisterButton()
+                .assertRegistrationSuccessMessage(email);
+        })
+    );
 
     // qase(
-    //     3,
+    //     14,
     //     it('TC_REG_03 - Register dengan konfirmasi password sama dengan password', function () {
     //         const {
     //             firstName,
@@ -78,7 +78,7 @@ describe('Register Test Suite', () => {
     // );
 
     // qase(
-    //     4,
+    //     15,
     //     it('TC_REG_04 - Verifikasi validasi error saat field email dikosongkan pada form registrasi', function () {
     //         const {
     //             firstName,
@@ -101,7 +101,7 @@ describe('Register Test Suite', () => {
     // );
 
     // qase(
-    //     5,
+    //     16,
     //     it('TC_REG_05 - Verifikasi pesan error validasi ketika password yang dimasukkan kurang dari 8 karakter', function () {
     //         const {
     //             firstName,
@@ -124,7 +124,7 @@ describe('Register Test Suite', () => {
     // );
 
     // qase(
-    //     6,
+    //     17,
     //     it('TC_REG_06 - Verifikasi pesan error validasi ketika field konfirmasi password dikosongkan pada form registrasi', function () {
     //         const { firstName, lastName, email, phone, password } =
     //             this.userData.userWithEmptyConfirmPassword;
@@ -140,7 +140,7 @@ describe('Register Test Suite', () => {
     // );
 
     // qase(
-    //     7,
+    //     18,
     //     it('TC_REG_07 - Verifikasi pesan error validasi ketika format email yang dimasukkan salah pada form registrasi', function () {
     //         const {
     //             firstName,
@@ -163,8 +163,8 @@ describe('Register Test Suite', () => {
     // );
 
     // qase(
-    //     8,
-    //     it('TC_REG_08 -Verifikasi pesan error validasi ketika format nomor HP yang dimasukkan salah (misalnya, mengandung huruf atau panjang tidak sesuai)', function () {
+    //     19,
+    //     it('TC_REG_08 -Verifikasi pesan error validasi ketika format nomor HP yang dimasukkan salah (misalnya, mengandung huruf atau panjang tidak sesuai', function () {
     //         const {
     //             firstName,
     //             lastName,
@@ -186,7 +186,7 @@ describe('Register Test Suite', () => {
     // );
 
     // qase(
-    //     9,
+    //     20,
     //     it('TC_REG_09 - Verifikasi pesan error validasi ketika nilai pada field konfirmasi password tidak sama dengan nilai pada field password', function () {
     //         const {
     //             firstName,
@@ -209,7 +209,7 @@ describe('Register Test Suite', () => {
     // );
 
     // qase(
-    //     10,
+    //     21,
     //     it('TC_REG_10 - Verifikasi pesan error validasi ketika mencoba registrasi dengan semua field input dibiarkan kosong', () => {
     //         RegisterPage.clickRegisterButton();
     //         RegisterPage.assertRequiredFieldErrorMessage();
