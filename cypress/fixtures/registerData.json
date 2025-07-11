@@ -2,7 +2,7 @@
     "validUser": {
         "firstName": "test",
         "lastName": "automation",
-        "email": "testingqase101@gmail.com",
+        "email": "testingqase@gmail.com",
         "phone": "08123456789",
         "password": "Cobatest",
         "confirmPassword": "Cobatest"
