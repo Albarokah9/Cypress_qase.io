@@ -23,6 +23,14 @@ Automated end-to-end testing project using **Cypress** integrated with **Qase.io
 
 ## ⚙️ Environment Setup
 
+### 📌 Prerequisite
+
+Pastikan sudah menginstal `yarn` secara global (hanya perlu sekali di komputer Anda):
+
+```bash
+npm install -g yarn
+```
+
 ### 🔑 1. Clone the repository
 
 ```bash
@@ -36,7 +44,7 @@ cd Cypress_qase.io
 yarn install
 ```
 
-> Ini akan otomatis menginstal semua dependency dari `package.json`, termasuk:
+> Ini otomatis menginstal semua dependency dari `package.json`:
 >
 > * cypress
 > * cypress-qase-reporter
@@ -56,10 +64,6 @@ QASE_TESTOPS_PROJECT=CTEST
 > Ganti `your_api_token` dengan API token dari Qase, dan `CTEST` dengan Project Code Qase kamu.
 
 Pastikan `.env` diabaikan Git:
-
-```bash
-cat .gitignore
-```
 
 ```
 node_modules/
@@ -82,8 +86,6 @@ yarn cypress:open
 ```bash
 yarn test:qase
 ```
-
-Ini akan menjalankan tes & mengirim hasilnya ke Qase TestOps.
 
 ---
 
@@ -143,8 +145,6 @@ module.exports = defineConfig({
 ---
 
 ## ✍️ Writing Tests with Qase Integration
-
-Untuk mengaitkan test case Cypress ke Qase ID, bisa:
 
 ### ✅ Sederhana
 
