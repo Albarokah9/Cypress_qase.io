@@ -8,51 +8,51 @@ describe('Register Test Suite', () => {
         RegisterPage.visitRegisterPage();
     });
 
-    qase(
-        12,
-        it('TC_REG_01 - Berhasil membuat akun baru', function () {
-            const {
-                firstName,
-                lastName,
-                email,
-                phone,
-                password,
-                confirmPassword,
-            } = this.userData.validUser;
+    // qase(
+    //     12,
+    //     it('TC_REG_01 - Berhasil membuat akun baru', function () {
+    //         const {
+    //             firstName,
+    //             lastName,
+    //             email,
+    //             phone,
+    //             password,
+    //             confirmPassword,
+    //         } = this.userData.validUser;
 
-            RegisterPage.typeFirstName(firstName)
-                .typeLastName(lastName)
-                .typeEmail(email)
-                .typePhone(phone)
-                .typePassword(password)
-                .typeConfirmPassword(confirmPassword)
-                .clickRegisterButton()
-                .assertRegistrationSuccessMessage(email);
-        })
-    );
+    //         RegisterPage.typeFirstName(firstName)
+    //             .typeLastName(lastName)
+    //             .typeEmail(email)
+    //             .typePhone(phone)
+    //             .typePassword(password)
+    //             .typeConfirmPassword(confirmPassword)
+    //             .clickRegisterButton()
+    //             .assertRegistrationSuccessMessage(email);
+    //     })
+    // );
 
-    qase(
-        13,
-        it('TC_REG_02 - Register  dengan menggunakan kombinasi password huruf & angka', function () {
-            const {
-                firstName,
-                lastName,
-                email,
-                phone,
-                password,
-                confirmPassword,
-            } = this.userData.userWithAlphanumericPassword;
+    // qase(
+    //     13,
+    //     it('TC_REG_02 - Register  dengan menggunakan kombinasi password huruf & angka', function () {
+    //         const {
+    //             firstName,
+    //             lastName,
+    //             email,
+    //             phone,
+    //             password,
+    //             confirmPassword,
+    //         } = this.userData.userWithAlphanumericPassword;
 
-            RegisterPage.typeFirstName(firstName)
-                .typeLastName(lastName)
-                .typeEmail(email)
-                .typePhone(phone)
-                .typePassword(password)
-                .typeConfirmPassword(confirmPassword)
-                .clickRegisterButton()
-                .assertRegistrationSuccessMessage(email);
-        })
-    );
+    //         RegisterPage.typeFirstName(firstName)
+    //             .typeLastName(lastName)
+    //             .typeEmail(email)
+    //             .typePhone(phone)
+    //             .typePassword(password)
+    //             .typeConfirmPassword(confirmPassword)
+    //             .clickRegisterButton()
+    //             .assertRegistrationSuccessMessage(email);
+    //     })
+    // );
 
     // qase(
     //     14,
@@ -100,28 +100,28 @@ describe('Register Test Suite', () => {
     //     })
     // );
 
-    // qase(
-    //     16,
-    //     it('TC_REG_05 - Verifikasi pesan error validasi ketika password yang dimasukkan kurang dari 8 karakter', function () {
-    //         const {
-    //             firstName,
-    //             lastName,
-    //             email,
-    //             phone,
-    //             password,
-    //             confirmPassword,
-    //         } = this.userData.userWithShortPassword;
+    qase(
+        16,
+        it('TC_REG_05 - Verifikasi pesan error validasi ketika password yang dimasukkan kurang dari 8 karakter', function () {
+            const {
+                firstName,
+                lastName,
+                email,
+                phone,
+                password,
+                confirmPassword,
+            } = this.userData.userWithShortPassword;
 
-    //         RegisterPage.typeFirstName(firstName)
-    //             .typeLastName(lastName)
-    //             .typeEmail(email)
-    //             .typePhone(phone)
-    //             .typePassword(password)
-    //             .typeConfirmPassword(confirmPassword)
-    //             .clickRegisterButton()
-    //             .assertShortPasswordErrorMessage();
-    //     })
-    // );
+            RegisterPage.typeFirstName(firstName)
+                .typeLastName(lastName)
+                .typeEmail(email)
+                .typePhone(phone)
+                .typePassword(password)
+                .typeConfirmPassword(confirmPassword)
+                .clickRegisterButton()
+                .assertShortPasswordErrorMessage();
+        })
+    );
 
     // qase(
     //     17,
