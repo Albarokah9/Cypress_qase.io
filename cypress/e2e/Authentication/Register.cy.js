@@ -54,55 +54,9 @@ describe('Register Test Suite', () => {
     //     })
     // );
 
-    qase(
-        14,
-        it('TC_REG_03 - Register dengan konfirmasi password sama dengan password', function () {
-            const {
-                firstName,
-                lastName,
-                email,
-                phone,
-                password,
-                confirmPassword,
-            } = this.userData.userWithMatchingPasswords;
-
-            RegisterPage.typeFirstName(firstName)
-                .typeLastName(lastName)
-                .typeEmail(email)
-                .typePhone(phone)
-                .typePassword(password)
-                .typeConfirmPassword(confirmPassword)
-                .clickRegisterButton()
-                .assertRegistrationSuccessMessage(email);
-        })
-    );
-
-    qase(
-        15,
-        it('TC_REG_04 - Verifikasi validasi error saat field email dikosongkan pada form registrasi', function () {
-            const {
-                firstName,
-                lastName,
-                email,
-                phone,
-                password,
-                confirmPassword,
-            } = this.userData.userWithEmptyEmail;
-
-            RegisterPage.typeFirstName(firstName)
-                .typeLastName(lastName)
-                .typeEmail(email)
-                .typePhone(phone)
-                .typePassword(password)
-                .typeConfirmPassword(confirmPassword)
-                .clickRegisterButton()
-                .assertEmailErrorMessage();
-        })
-    );
-
     // qase(
-    //     16,
-    //     it('TC_REG_05 - Verifikasi pesan error validasi ketika password yang dimasukkan kurang dari 8 karakter', function () {
+    //     14,
+    //     it('TC_REG_03 - Register dengan konfirmasi password sama dengan password', function () {
     //         const {
     //             firstName,
     //             lastName,
@@ -110,7 +64,7 @@ describe('Register Test Suite', () => {
     //             phone,
     //             password,
     //             confirmPassword,
-    //         } = this.userData.userWithShortPassword;
+    //         } = this.userData.userWithMatchingPasswords;
 
     //         RegisterPage.typeFirstName(firstName)
     //             .typeLastName(lastName)
@@ -119,9 +73,55 @@ describe('Register Test Suite', () => {
     //             .typePassword(password)
     //             .typeConfirmPassword(confirmPassword)
     //             .clickRegisterButton()
-    //             .assertShortPasswordErrorMessage();
+    //             .assertRegistrationSuccessMessage(email);
     //     })
     // );
+
+    // qase(
+    //     15,
+    //     it('TC_REG_04 - Verifikasi validasi error saat field email dikosongkan pada form registrasi', function () {
+    //         const {
+    //             firstName,
+    //             lastName,
+    //             email,
+    //             phone,
+    //             password,
+    //             confirmPassword,
+    //         } = this.userData.userWithEmptyEmail;
+
+    //         RegisterPage.typeFirstName(firstName)
+    //             .typeLastName(lastName)
+    //             .typeEmail(email)
+    //             .typePhone(phone)
+    //             .typePassword(password)
+    //             .typeConfirmPassword(confirmPassword)
+    //             .clickRegisterButton()
+    //             .assertEmailErrorMessage();
+    //     })
+    // );
+
+    qase(
+        16,
+        it('TC_REG_05 - Verifikasi pesan error validasi ketika password yang dimasukkan kurang dari 8 karakter', function () {
+            const {
+                firstName,
+                lastName,
+                email,
+                phone,
+                password,
+                confirmPassword,
+            } = this.userData.userWithShortPassword;
+
+            RegisterPage.typeFirstName(firstName)
+                .typeLastName(lastName)
+                .typeEmail(email)
+                .typePhone(phone)
+                .typePassword(password)
+                .typeConfirmPassword(confirmPassword)
+                .clickRegisterButton()
+                .assertShortPasswordErrorMessage();
+        })
+    );
 
     // qase(
     //     17,
