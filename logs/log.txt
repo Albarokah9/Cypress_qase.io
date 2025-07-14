@@ -303,3 +303,128 @@
 [2025-07-13T17:05:54.609Z] [DEBUG] qase: Results sent to Qase: 2
 [2025-07-13T17:05:56.281Z] [INFO] qase: [34mTest run link: https://app.qase.io/run/CIWQI/dashboard/9[39m
 [2025-07-13T17:05:56.283Z] [INFO] qase: [32mRun 9 completed[39m
+[2025-07-14T05:32:33.175Z] [DEBUG] qase: Config: {"debug":true,"logging":true,"testops":{"api":{},"uploadAttachments":true,"run":{"complete":true,"tags":[]},"plan":{},"batch":{}},"frameworkPackage":"cypress","frameworkName":"cypress","reporterName":"cypress-qase-reporter","mode":"testops","report":{"connections":{"local":{}}}}
+[2025-07-14T05:32:34.121Z] [DEBUG] qase: Host data: {"system":"win32","machineName":"DESKTOP-F2HGEKE","release":"10.0.26100","version":"Microsoft Windows [Version 10.0.26100.4652]","arch":"x64","node":"v22.17.0","npm":"10.9.2","framework":"14.5.1","reporter":"2.3.1","commons":"2.3.6","apiClientV1":"1.0.3","apiClientV2":"1.0.3"}
+[2025-07-14T05:32:34.132Z] [ERROR] qase: Unable to create upstream reporter:
+ Error: Either "testops.api.token" parameter or "QASE_TESTOPS_API_TOKEN" environment variable is required in "testops" mode
+    at QaseReporter.createReporter (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:387:27)
+    at new QaseReporter (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:90:42)
+    at QaseReporter.getInstance (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:266:37)
+    at beforeRunHook (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\cypress-qase-reporter\dist\hooks.js:13:61)
+    at Object.handler (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\cypress-qase-reporter\dist\plugin.js:6:41)
+    at invoke (C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\@packages\server\lib\plugins\child\run_plugins.js:189:18)
+    at C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\@packages\server\lib\plugins\util.js:59:14
+    at tryCatcher (C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise.attempt.Promise.try (C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\bluebird\js\release\method.js:39:29)
+    at Object.wrapChildPromise (C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\@packages\server\lib\plugins\util.js:58:23)
+    at RunPlugins.execute (C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\@packages\server\lib\plugins\child\run_plugins.js:168:21)
+    at EventEmitter.<anonymous> (C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\@packages\server\lib\plugins\child\run_plugins.js:56:12)
+    at EventEmitter.emit (node:events:518:28)
+    at process.<anonymous> (C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\@packages\server\lib\plugins\util.js:33:22)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+[2025-07-14T05:32:59.239Z] [DEBUG] qase: Config: {"id":"default","debug":true,"logging":true,"testops":{"api":{},"uploadAttachments":true,"run":{"complete":true,"tags":[]},"plan":{},"batch":{}},"frameworkPackage":"cypress","frameworkName":"cypress","reporterName":"cypress-qase-reporter","mode":"testops","report":{"connections":{"local":{}}}}
+[2025-07-14T05:33:00.302Z] [DEBUG] qase: Host data: {"system":"win32","machineName":"DESKTOP-F2HGEKE","release":"10.0.26100","version":"Microsoft Windows [Version 10.0.26100.4652]","arch":"x64","node":"v22.17.0","npm":"10.9.2","framework":"14.5.1","reporter":"2.3.1","commons":"2.3.6","apiClientV1":"1.0.3","apiClientV2":"1.0.3"}
+[2025-07-14T05:33:00.304Z] [ERROR] qase: Unable to create upstream reporter:
+ Error: Either "testops.api.token" parameter or "QASE_TESTOPS_API_TOKEN" environment variable is required in "testops" mode
+    at QaseReporter.createReporter (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:387:27)
+    at new QaseReporter (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:90:42)
+    at QaseReporter.getInstance (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:266:37)
+    at new CypressQaseReporter (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\cypress-qase-reporter\dist\reporter.js:67:64)
+    at MultiReporters.processReporterEnabled (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\cypress-multi-reporters\lib\MultiReporters.js:96:28)
+    at Array.map (<anonymous>)
+    at new MultiReporters (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\cypress-multi-reporters\lib\MultiReporters.js:56:44)
+    at A.setRunnables (<embedded>:2754:15523)
+    at Object.onTestsReceivedAndMaybeRecord (<embedded>:2858:35161)
+    at p.<anonymous> (<embedded>:2754:40449)
+    at p.emit (node:events:518:28)
+    at <embedded>:2754:26654
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async EventEmitter.processCDPRuntimeBinding (<embedded>:2754:26529)
+[2025-07-14T05:33:29.251Z] [DEBUG] qase: Config: {"id":"default","debug":true,"logging":true,"testops":{"api":{},"uploadAttachments":true,"run":{"complete":true,"tags":[]},"plan":{},"batch":{}},"mode":"testops","report":{"connections":{"local":{}}}}
+[2025-07-14T05:33:30.443Z] [DEBUG] qase: Host data: {"system":"win32","machineName":"DESKTOP-F2HGEKE","release":"10.0.26100","version":"Microsoft Windows [Version 10.0.26100.4652]","arch":"x64","node":"v22.17.0","npm":"10.9.2","framework":"","reporter":"","commons":"2.3.6","apiClientV1":"1.0.3","apiClientV2":"1.0.3"}
+[2025-07-14T05:33:30.446Z] [ERROR] qase: Unable to create upstream reporter:
+ Error: Either "testops.api.token" parameter or "QASE_TESTOPS_API_TOKEN" environment variable is required in "testops" mode
+    at QaseReporter.createReporter (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:387:27)
+    at new QaseReporter (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:90:42)
+    at QaseReporter.getInstance (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:266:37)
+    at runChild (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\cypress-qase-reporter\dist\child.js:7:61)
+    at Object.<anonymous> (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\cypress-qase-reporter\dist\child.js:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+[2025-07-14T05:37:31.296Z] [DEBUG] qase: Config: {"debug":true,"logging":true,"testops":{"api":{},"project":"CIWQI","uploadAttachments":true,"run":{"complete":true,"tags":[]},"plan":{},"batch":{}},"frameworkPackage":"cypress","frameworkName":"cypress","reporterName":"cypress-qase-reporter","mode":"testops","report":{"connections":{"local":{}}}}
+[2025-07-14T05:37:32.492Z] [DEBUG] qase: Host data: {"system":"win32","machineName":"DESKTOP-F2HGEKE","release":"10.0.26100","version":"Microsoft Windows [Version 10.0.26100.4652]","arch":"x64","node":"v22.17.0","npm":"10.9.2","framework":"14.5.1","reporter":"2.3.1","commons":"2.3.6","apiClientV1":"1.0.3","apiClientV2":"1.0.3"}
+[2025-07-14T05:37:32.496Z] [ERROR] qase: Unable to create upstream reporter:
+ Error: Either "testops.api.token" parameter or "QASE_TESTOPS_API_TOKEN" environment variable is required in "testops" mode
+    at QaseReporter.createReporter (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:387:27)
+    at new QaseReporter (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:90:42)
+    at QaseReporter.getInstance (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:266:37)
+    at beforeRunHook (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\cypress-qase-reporter\dist\hooks.js:13:61)
+    at Object.handler (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\cypress-qase-reporter\dist\plugin.js:6:41)
+    at invoke (C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\@packages\server\lib\plugins\child\run_plugins.js:189:18)
+    at C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\@packages\server\lib\plugins\util.js:59:14
+    at tryCatcher (C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise.attempt.Promise.try (C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\bluebird\js\release\method.js:39:29)
+    at Object.wrapChildPromise (C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\@packages\server\lib\plugins\util.js:58:23)
+    at RunPlugins.execute (C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\@packages\server\lib\plugins\child\run_plugins.js:168:21)
+    at EventEmitter.<anonymous> (C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\@packages\server\lib\plugins\child\run_plugins.js:56:12)
+    at EventEmitter.emit (node:events:518:28)
+    at process.<anonymous> (C:\Users\albar\AppData\Local\Cypress\Cache\14.5.1\Cypress\resources\app\node_modules\@packages\server\lib\plugins\util.js:33:22)
+    at process.emit (node:events:518:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21)
+[2025-07-14T05:37:43.035Z] [DEBUG] qase: Config: {"id":"default","debug":true,"logging":true,"testops":{"api":{},"project":"CIWQI","uploadAttachments":true,"run":{"complete":true,"tags":[]},"plan":{},"batch":{}},"frameworkPackage":"cypress","frameworkName":"cypress","reporterName":"cypress-qase-reporter","mode":"testops","report":{"connections":{"local":{}}}}
+[2025-07-14T05:37:44.062Z] [DEBUG] qase: Host data: {"system":"win32","machineName":"DESKTOP-F2HGEKE","release":"10.0.26100","version":"Microsoft Windows [Version 10.0.26100.4652]","arch":"x64","node":"v22.17.0","npm":"10.9.2","framework":"14.5.1","reporter":"2.3.1","commons":"2.3.6","apiClientV1":"1.0.3","apiClientV2":"1.0.3"}
+[2025-07-14T05:37:44.064Z] [ERROR] qase: Unable to create upstream reporter:
+ Error: Either "testops.api.token" parameter or "QASE_TESTOPS_API_TOKEN" environment variable is required in "testops" mode
+    at QaseReporter.createReporter (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:387:27)
+    at new QaseReporter (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:90:42)
+    at QaseReporter.getInstance (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:266:37)
+    at new CypressQaseReporter (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\cypress-qase-reporter\dist\reporter.js:67:64)
+    at MultiReporters.processReporterEnabled (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\cypress-multi-reporters\lib\MultiReporters.js:96:28)
+    at Array.map (<anonymous>)
+    at new MultiReporters (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\cypress-multi-reporters\lib\MultiReporters.js:56:44)
+    at A.setRunnables (<embedded>:2754:15523)
+    at Object.onTestsReceivedAndMaybeRecord (<embedded>:2858:35161)
+    at p.<anonymous> (<embedded>:2754:40449)
+    at p.emit (node:events:518:28)
+    at <embedded>:2754:26654
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async EventEmitter.processCDPRuntimeBinding (<embedded>:2754:26529)
+[2025-07-14T05:38:13.378Z] [DEBUG] qase: Config: {"id":"default","debug":true,"logging":true,"testops":{"api":{},"project":"CIWQI","uploadAttachments":true,"run":{"complete":true,"tags":[]},"plan":{},"batch":{}},"mode":"testops","report":{"connections":{"local":{}}}}
+[2025-07-14T05:38:14.254Z] [DEBUG] qase: Host data: {"system":"win32","machineName":"DESKTOP-F2HGEKE","release":"10.0.26100","version":"Microsoft Windows [Version 10.0.26100.4652]","arch":"x64","node":"v22.17.0","npm":"10.9.2","framework":"","reporter":"","commons":"2.3.6","apiClientV1":"1.0.3","apiClientV2":"1.0.3"}
+[2025-07-14T05:38:14.257Z] [ERROR] qase: Unable to create upstream reporter:
+ Error: Either "testops.api.token" parameter or "QASE_TESTOPS_API_TOKEN" environment variable is required in "testops" mode
+    at QaseReporter.createReporter (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:387:27)
+    at new QaseReporter (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:90:42)
+    at QaseReporter.getInstance (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\qase-javascript-commons\dist\qase.js:266:37)
+    at runChild (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\cypress-qase-reporter\dist\child.js:7:61)
+    at Object.<anonymous> (C:\Users\albar\OneDrive\Dokumen\Project_Bootcamp\Cypress_qase.io\node_modules\cypress-qase-reporter\dist\child.js:11:1)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+[2025-07-14T05:40:30.631Z] [DEBUG] qase: Config: {"debug":true,"logging":true,"testops":{"api":{"token":"b50****8f09"},"project":"CIWQI","uploadAttachments":true,"run":{"complete":true,"tags":[]},"plan":{},"batch":{}},"frameworkPackage":"cypress","frameworkName":"cypress","reporterName":"cypress-qase-reporter","mode":"testops","report":{"connections":{"local":{}}}}
+[2025-07-14T05:40:31.722Z] [DEBUG] qase: Host data: {"system":"win32","machineName":"DESKTOP-F2HGEKE","release":"10.0.26100","version":"Microsoft Windows [Version 10.0.26100.4652]","arch":"x64","node":"v22.17.0","npm":"10.9.2","framework":"14.5.1","reporter":"2.3.1","commons":"2.3.6","apiClientV1":"1.0.3","apiClientV2":"1.0.3"}
+[2025-07-14T05:40:31.728Z] [DEBUG] qase: Starting test run
+[2025-07-14T05:40:31.731Z] [DEBUG] qase: Creating test run: {"title":"Automated run 2025-07-14T05:40:31.730Z","description":"","is_autotest":true,"cases":[],"start_time":"2025-07-14 05:40:21","tags":[]}
+[2025-07-14T05:40:33.231Z] [DEBUG] qase: Test run created: {"status":true,"result":{"id":11}}
+[2025-07-14T05:40:42.895Z] [DEBUG] qase: Config: {"id":"default","debug":true,"logging":true,"testops":{"api":{"token":"b50****8f09"},"project":"CIWQI","uploadAttachments":true,"run":{"complete":true,"id":11,"tags":[]},"plan":{},"batch":{}},"frameworkPackage":"cypress","frameworkName":"cypress","reporterName":"cypress-qase-reporter","mode":"testops","report":{"connections":{"local":{}}}}
+[2025-07-14T05:40:43.906Z] [DEBUG] qase: Host data: {"system":"win32","machineName":"DESKTOP-F2HGEKE","release":"10.0.26100","version":"Microsoft Windows [Version 10.0.26100.4652]","arch":"x64","node":"v22.17.0","npm":"10.9.2","framework":"14.5.1","reporter":"2.3.1","commons":"2.3.6","apiClientV1":"1.0.3","apiClientV2":"1.0.3"}
+[2025-07-14T05:41:00.212Z] [INFO] qase: [31mTest TC_REG_03 - Register dengan konfirmasi password sama dengan password failed[39m
+[2025-07-14T05:41:00.213Z] [INFO] qase: [34mSee why this test failed: https://app.qase.io/run/CIWQI/dashboard/11?source=logs&status=%5B2%5D&search=CIWQI-14[39m
+[2025-07-14T05:41:00.215Z] [DEBUG] qase: Adding test result: {"attachments":[],"author":null,"fields":{},"message":"Timed out retrying after 4000ms: Expected to find element: `.alert`, but never found it.","muted":false,"params":{},"group_params":{},"relations":{"suite":{"data":[{"title":"Register Test Suite","public_id":null}]}},"run_id":null,"signature":"14::cypress::e2e::authentication::register.cy.js::register_test_suite::tc_reg_03_-_register_dengan_konfirmasi_password_sama_dengan_password_(qase_id:_14)","steps":[],"id":"e687a4a1-00cb-4114-b79f-28caaa9de773","execution":{"status":"failed","start_time":1752471643.942,"end_time":1752471660.152,"duration":16210,"stacktrace":"AssertionError: Timed out retrying after 4000ms: Expected to find element: `.alert`, but never found it.\n    at RegisterPage.assertRegistrationSuccessMessage (webpack://cypress-qase.io/./cypress/support/pages/registerPage.js:79:13)\n    at Context.eval (webpack://cypress-qase.io/./cypress/e2e/Authentication/Register.cy.js:76:17)","thread":null},"testops_id":[14],"title":"TC_REG_03 - Register dengan konfirmasi password sama dengan password"}
+[2025-07-14T05:41:09.297Z] [INFO] qase: [32mTest TC_REG_04 - Verifikasi validasi error saat field email dikosongkan pada form registrasi passed[39m
+[2025-07-14T05:41:09.298Z] [DEBUG] qase: Adding test result: {"attachments":[],"author":null,"fields":{},"message":"","muted":false,"params":{},"group_params":{},"relations":{"suite":{"data":[{"title":"Register Test Suite","public_id":null}]}},"run_id":null,"signature":"15::cypress::e2e::authentication::register.cy.js::register_test_suite::tc_reg_04_-_verifikasi_validasi_error_saat_field_email_dikosongkan_pada_form_registrasi_(qase_id:_15)","steps":[],"id":"1ec73c6b-b39b-44cb-8c00-478315400bdf","execution":{"status":"passed","start_time":1752471660.439,"end_time":1752471669.295,"duration":8856,"stacktrace":null,"thread":null},"testops_id":[15],"title":"TC_REG_04 - Verifikasi validasi error saat field email dikosongkan pada form registrasi"}
+[2025-07-14T05:41:11.964Z] [DEBUG] qase: Config: {"id":"default","debug":true,"logging":true,"testops":{"api":{"token":"b50****8f09"},"project":"CIWQI","uploadAttachments":true,"run":{"complete":true,"id":11,"tags":[]},"plan":{},"batch":{}},"mode":"testops","report":{"connections":{"local":{}}}}
+[2025-07-14T05:41:12.942Z] [DEBUG] qase: Host data: {"system":"win32","machineName":"DESKTOP-F2HGEKE","release":"10.0.26100","version":"Microsoft Windows [Version 10.0.26100.4652]","arch":"x64","node":"v22.17.0","npm":"10.9.2","framework":"","reporter":"","commons":"2.3.6","apiClientV1":"1.0.3","apiClientV2":"1.0.3"}
+[2025-07-14T05:41:12.950Z] [DEBUG] qase: Transformed result: {"title":"TC_REG_03 - Register dengan konfirmasi password sama dengan password","execution":{"status":"failed","start_time":1752471643.942,"end_time":1752471660.152,"duration":16210,"stacktrace":"AssertionError: Timed out retrying after 4000ms: Expected to find element: `.alert`, but never found it.\n    at RegisterPage.assertRegistrationSuccessMessage (webpack://cypress-qase.io/./cypress/support/pages/registerPage.js:79:13)\n    at Context.eval (webpack://cypress-qase.io/./cypress/e2e/Authentication/Register.cy.js:76:17)","thread":null},"testops_ids":[14],"attachments":[],"steps":[],"params":{},"param_groups":[],"relations":{"suite":{"data":[{"public_id":null,"title":"Register Test Suite"}]}},"message":"Timed out retrying after 4000ms: Expected to find element: `.alert`, but never found it.","fields":{},"defect":false,"signature":"14::cypress::e2e::authentication::register.cy.js::register_test_suite::tc_reg_03_-_register_dengan_konfirmasi_password_sama_dengan_password_(qase_id:_14)"}
+[2025-07-14T05:41:12.951Z] [DEBUG] qase: Transformed result: {"title":"TC_REG_04 - Verifikasi validasi error saat field email dikosongkan pada form registrasi","execution":{"status":"passed","start_time":1752471660.439,"end_time":1752471669.295,"duration":8856,"stacktrace":null,"thread":null},"testops_ids":[15],"attachments":[],"steps":[],"params":{},"param_groups":[],"relations":{"suite":{"data":[{"public_id":null,"title":"Register Test Suite"}]}},"message":"","fields":{},"defect":false,"signature":"15::cypress::e2e::authentication::register.cy.js::register_test_suite::tc_reg_04_-_verifikasi_validasi_error_saat_field_email_dikosongkan_pada_form_registrasi_(qase_id:_15)"}
+[2025-07-14T05:41:14.381Z] [DEBUG] qase: Results sent to Qase: 2
+[2025-07-14T05:41:15.474Z] [INFO] qase: [34mTest run link: https://app.qase.io/run/CIWQI/dashboard/11[39m
+[2025-07-14T05:41:15.476Z] [INFO] qase: [32mRun 11 completed[39m

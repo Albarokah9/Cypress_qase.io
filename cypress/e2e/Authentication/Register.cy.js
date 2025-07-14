@@ -123,21 +123,21 @@ describe('Register Test Suite', () => {
         })
     );
 
-    // qase(
-    //     17,
-    //     it('TC_REG_06 - Verifikasi pesan error validasi ketika field konfirmasi password dikosongkan pada form registrasi', function () {
-    //         const { firstName, lastName, email, phone, password } =
-    //             this.userData.userWithEmptyConfirmPassword;
+    qase(
+        17,
+        it('TC_REG_06 - Verifikasi pesan error validasi ketika field konfirmasi password dikosongkan pada form registrasi', function () {
+            const { firstName, lastName, email, phone, password } =
+                this.userData.userWithEmptyConfirmPassword;
 
-    //         RegisterPage.typeFirstName(firstName)
-    //             .typeLastName(lastName)
-    //             .typeEmail(email)
-    //             .typePhone(phone)
-    //             .typePassword(password)
-    //             .clickRegisterButton()
-    //             .assertRequiredConfirmPasswordMessage();
-    //     })
-    // );
+            RegisterPage.typeFirstName(firstName)
+                .typeLastName(lastName)
+                .typeEmail(email)
+                .typePhone(phone)
+                .typePassword(password)
+                .clickRegisterButton()
+                .assertRequiredConfirmPasswordMessage();
+        })
+    );
 
     // qase(
     //     18,
