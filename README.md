@@ -1,4 +1,4 @@
-#Cypress + Qase.io Integration
+# Cypress + Qase.io Integration
 
 Automated end-to-end testing project using **Cypress** integrated with **Qase.io TestOps** for test management, reporting, and tracking.
 
