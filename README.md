@@ -4,9 +4,7 @@ Automated end-to-end testing project using **Cypress** integrated with **Qase.io
 
 ---
 
-## 📊 Qase.io Dashboard
-
-👉 [View TestOps Dashboard](https://app.qase.io/public/dashboard/0ac1da24f05405656844aa516d75017caeaec577)
+* 📝 **Qase Dashboard:** [View Project Dashboard](https://app.qase.io/public/dashboard/0ac1da24f05405656844aa516d75017caeaec577)
 * ✅ **Latest Test Report:** [View Test Results](https://app.qase.io/public/report/6905e4a30272ffb9c36a4b6c9db257afc86f88bf)
 
 
