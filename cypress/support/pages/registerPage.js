@@ -94,7 +94,7 @@ class RegisterPage {
     assertInvalidEmailFormatErrorMessage() {
         cy.get('#email').then(($input) => {
             expect($input[0].validationMessage).to.contain(
-                "Please include an '@' in the email address. 'test5mail.com' is missing an '@'."
+                "Please include an '@' in the email address. 'cypressqaseio15gmail.com' is missing an '@'."
             );
             cy.screenshot('Register Invalid Email Format Page', {
                 capture: 'fullPage',
