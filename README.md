@@ -1,6 +1,12 @@
-# Cypress + Qase.io Integration
+# 🚀 Cypress + Qase.io Integration
 
 Automated end-to-end testing project using **Cypress** integrated with **Qase.io TestOps** for test management, reporting, and tracking.
+
+---
+
+## 📊 Qase.io Dashboard
+
+👉 [View TestOps Dashboard](https://app.qase.io/public/dashboard/0ac1da24f05405656844aa516d75017caeaec577)
 
 ---
 
@@ -23,9 +29,7 @@ Automated end-to-end testing project using **Cypress** integrated with **Qase.io
 
 ## ⚙️ Environment Setup
 
-### 📌 Prerequisite
-
-Pastikan sudah menginstal `yarn` secara global (hanya perlu sekali di komputer Anda):
+### 🔧 Install yarn globally
 
 ```bash
 npm install -g yarn
@@ -44,14 +48,6 @@ cd Cypress_qase.io
 yarn install
 ```
 
-> Ini otomatis menginstal semua dependency dari `package.json`:
->
-> * cypress
-> * cypress-qase-reporter
-> * cypress-multi-reporters
-> * dotenv
-> * cross-env
-
 ### 🔐 3. Create .env
 
 Buat file `.env` di root project:
@@ -61,9 +57,13 @@ QASE_TESTOPS_API_TOKEN=your_api_token
 QASE_TESTOPS_PROJECT=CTEST
 ```
 
-> Ganti `your_api_token` dengan API token dari Qase, dan `CTEST` dengan Project Code Qase kamu.
+> Ganti `your_api_token` dengan API token Qase, dan `CTEST` dengan Project Code Qase kamu.
 
 Pastikan `.env` diabaikan Git:
+
+```bash
+cat .gitignore
+```
 
 ```
 node_modules/
@@ -87,15 +87,13 @@ yarn cypress:open
 yarn test:qase
 ```
 
+> Ini akan menjalankan tes & mengirim hasilnya ke Qase TestOps.
+
 ---
 
 ## 🔗 Configuration (cypress.config.js)
 
-Sudah dikonfigurasi dengan:
-
-* Multi reporter (`spec` + `cypress-qase-reporter`)
-* Membaca token & project code dari `.env`
-* Upload attachment & mark run complete di Qase
+Sudah dikonfigurasi dengan multi reporter (`spec` + `cypress-qase-reporter`), membaca token dari `.env`, dan upload attachments ke Qase.
 
 ```javascript
 require('dotenv').config();
@@ -104,31 +102,20 @@ const { defineConfig } = require('cypress');
 module.exports = defineConfig({
     reporter: 'cypress-multi-reporters',
     reporterOptions: {
-        // Aktifkan reporter "spec" (output ke terminal) & Qase
         reporterEnabled: 'spec, cypress-qase-reporter',
-
-        // Opsi untuk cypress-qase-reporter
         cypressQaseReporterReporterOptions: {
             debug: true,
             logging: true,
-
-            // ⚠️ Untuk testops mode, letakkan token di testops.api.token
             testops: {
-                api: {
-                    token: process.env.QASE_TESTOPS_API_TOKEN,
-                },
+                api: { token: process.env.QASE_TESTOPS_API_TOKEN },
                 project: process.env.QASE_TESTOPS_PROJECT,
                 uploadAttachments: true,
-                run: {
-                    complete: true,
-                },
+                run: { complete: true },
             },
         },
     },
-
     e2e: {
         setupNodeEvents(on, config) {
-            // Hook plugin & metadata Qase untuk TestOps
             require('cypress-qase-reporter/plugin')(on, config);
             require('cypress-qase-reporter/metadata')(on);
         },
@@ -137,7 +124,6 @@ module.exports = defineConfig({
         watchForFileChanges: false,
     },
 });
-
 ```
 
 ---
