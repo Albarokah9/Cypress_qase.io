@@ -2,7 +2,7 @@
     "validUser": {
         "firstName": "test",
         "lastName": "automation",
-        "email": "testingqase@gmail.com",
+        "email": "cypressqaseio000@gmail.com",
         "phone": "08123456789",
         "password": "Cobatest",
         "confirmPassword": "Cobatest"
@@ -10,7 +10,7 @@
     "userWithAlphanumericPassword": {
         "firstName": "test",
         "lastName": "automation",
-        "email": "testingqase1@gmail.com",
+        "email": "cypressqaseio100@gmail.com",
         "phone": "08123456789",
         "password": "abc12345",
         "confirmPassword": "abc12345"
@@ -18,7 +18,7 @@
     "userWithMatchingPasswords": {
         "firstName": "test",
         "lastName": "automation",
-        "email": "testingqase2@gmail.com",
+        "email": "cypressqaseio200@gmail.com",
         "phone": "08123456789",
         "password": "abc12345",
         "confirmPassword": "abc12345"
@@ -34,7 +34,7 @@
     "userWithShortPassword": {
         "firstName": "test",
         "lastName": "automation",
-        "email": "test3@gmail.com",
+        "email": "cypressqaseio13@gmail.com",
         "phone": "08123456789",
         "password": "abc12",
         "confirmPassword": "abc12"
@@ -42,7 +42,7 @@
     "userWithEmptyConfirmPassword": {
         "firstName": "test",
         "lastName": "automation",
-        "email": "test4@gmail.com",
+        "email": "cypressqaseio14@gmail.com",
         "phone": "08123456789",
         "password": "abc12345",
         "confirmPassword": ""
@@ -50,7 +50,7 @@
     "userWithInvalidEmailFormat": {
         "firstName": "test",
         "lastName": "automation",
-        "email": "test5mail.com",
+        "email": "cypressqaseio15gmail.com",
         "phone": "08123456789",
         "password": "abc12345",
         "confirmPassword": "abc12345"
@@ -58,15 +58,15 @@
     "userWithInvalidPhoneNumber": {
         "firstName": "test",
         "lastName": "automation",
-        "email": "test6@mail.com",
-        "phone": "abc123abc",
+        "email": "cypressqaseio16@gmail.com",
+        "phone": "08961151asdf",
         "password": "abc12345",
         "confirmPassword": "abc12345"
     },
     "userWithMismatchedPasswords": {
         "firstName": "test",
         "lastName": "automation",
-        "email": "test7@mail.com",
+        "email": "cypressqaseio17@gmail.com",
         "phone": "08123456789",
         "password": "test5678",
         "confirmPassword": "test1234"
